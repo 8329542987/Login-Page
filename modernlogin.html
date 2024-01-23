@@ -1,0 +1,102 @@
+<html>
+<head>
+	<style>
+		body
+		{
+			background-color :rgb(67, 66, 66);
+			color : white;
+			text-align : center;
+			font-size : 30px;
+		}
+		#d1
+		{
+			height:65%;
+			width:40%;
+			left:30%;
+			top :25%;
+			border-radius:20px;	
+			position : absolute;		
+			background-color : rgba(0,0,0,0.5);
+			aspect-ratio:1/1;
+			object-fit:cover;
+			transition: scale 350ms ease,opacity 350ms linear;
+		}
+		#d1:not(:hover)
+		{
+			scale : 0.8;
+			capacity : 0.5;
+		}
+		
+		#d1:hover
+		{
+			box-shadow: 0 0 5px #03e9f4,0 0 15px #03e9f4,0 0 25px #03e9f4,0 0 100px #03e9f4;
+			cursor : pointer;
+			
+		}
+		 form 
+		{
+			text-align : left;
+    		        background-color: #fff;
+      			padding: 90px;
+      			border-radius: 8px;
+      			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    		}
+
+   
+
+   		#l1
+		{
+			color : black;
+			text-align: left;
+		}
+	        input 
+		{
+       			width: 100%;
+      			padding: 8px;
+      			margin-bottom: 16px;
+      			box-sizing: border-box;
+    		}
+		#btnsubmit 
+		{
+      			background-color: #007BFF;
+      			color: #fff;
+      			border: none;
+      			border-radius: 4px;
+			height:10%;
+			width:25%;
+      			cursor: pointer;
+    		}
+
+   		#btnsubmit:hover 
+		{
+		      background-color: #0056b3; 
+		}
+
+
+	
+	</style>
+</head>
+<body>
+	<br>
+	<br>
+	<br>
+	&nbsp;&nbsp;LOGIN PAGE :
+	<div id="d1" >
+
+    	<form id="registrationForm">
+    	<label id="l1">Username :</label>
+    	<br>
+    	<input type="text" id="username" name="username" required>
+    	<br>	
+    	<label id="l1">Email :</label>
+    	<br>
+    	<input type="email" id="email" name="email" required>
+	<br>
+        <label id="l1">Password :</label>
+        <input type="password" id="password" name="password" required>
+
+	<input id="btnsubmit" type="submit" value="Register" >Register</input>
+  	</form>
+	</div>
+</body>
+</html>
